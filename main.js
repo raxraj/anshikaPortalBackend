@@ -22,6 +22,7 @@ app.use(cors())
 
 // Setting up routes
 app.use('/auth', require('./routes/authRoutes'))
+app.use('/dashboard/', require("./routes/dashboard"))
 
 // Start Listening on PORT process.env.PORT
 function callbackToExpressListen() {
